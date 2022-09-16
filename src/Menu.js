@@ -1,6 +1,9 @@
 import React from 'react';
+import { useState } from "react";
 
 function Menu({menuItems}) {
+    const [showMore, setShowMore] = useState(false);
+
     return(
         <div className="allCards">
             {menuItems.map((thing => {
@@ -14,7 +17,9 @@ function Menu({menuItems}) {
                                 <img src={image} width="200px" height="150px" alt="try it!" />
                             </div>
                             <div>                           
-                                <h5>{description}</h5>
+                                <p>{showMore ? description : description.substring(0, 170) + "..."} 
+                                    <button onClick={() => setShowMore(!showMore)}>{showMore ? "Show less" : "Show more"}</button>
+                                </p>
                             </div>
                         </div>
                     )

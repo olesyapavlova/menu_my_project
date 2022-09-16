@@ -25,3 +25,32 @@
   padding: 10px;
 }
 
+nav {
+  background-color: #7acd7a;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.link {
+  color: white;
+  padding: 40px;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.about {
+  font-size: 20px;
+  padding: 60px;
+}
+
+.discountContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.discountBtn {
+  border: none;
+  background-color: white;
+}
+

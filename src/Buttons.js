@@ -3,9 +3,9 @@ import React from 'react';
 function Buttons({filteredMenu}) {
     return(
         <div className="btnMenu">
-            <button class="btn" onClick = {() => filteredMenu("coffee")}>Coffee</button>
-            <button class="btn" onClick = {() => filteredMenu("tea")}>Tea</button>
-            <button class="btn" onClick = {() => filteredMenu("dessert")}>Dessert</button>
+            <button className="btn" onClick = {() => filteredMenu("coffee")}>Coffee</button>
+            <button className="btn" onClick = {() => filteredMenu("tea")}>Tea</button>
+            <button className="btn" onClick = {() => filteredMenu("dessert")}>Dessert</button>
         </div>
     )}
 
